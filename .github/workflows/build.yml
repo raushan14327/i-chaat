@@ -22,12 +22,20 @@ jobs:
 
       - name: Generate debug keystore
         run: |
+          mkdir -p ~/.android
           keytool -genkey -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
 
+      - name: Add placeholder google-services.json
+        run: |
+          if [ ! -f app/google-services.json ]; then
+            echo '{"project_info":{"project_id":"placeholder"},"client":[]}' > app/google-services.json
+          fi
+
       - name: Build debug APK
-        run: gradle assembleDebug
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
