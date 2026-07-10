@@ -1,0 +1,6 @@
+{
+  "name": "i chat",
+  "description": "A production-ready Android real-time chat application inspired by WhatsApp, with instant messaging, presence tracking, and local message caching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
