@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1024344228384",
+    "project_id": "i-chaat-e60ae",
+    "storage_bucket": "i-chaat-e60ae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024344228384:android:d3cc695c11361434b7f245",
+        "android_client_info": {
+          "package_name": "com.aistudio.chatapp.kuxqws"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYDBYuVrNh4OMnFKvbot6Qu9-KZf8uH8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
